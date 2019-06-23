@@ -98,11 +98,10 @@
 
 		$('a').on('click', function () {
 	    var index = $(this).index('a');
-      console.log(index);
 	    var relative = $($(".comments p").eq(index)).offset().top;
 	    var absolute = $('.comments').scrollTop() - $(".together").offset().top;
 	    $('.comments').animate({
-	      scrollTop: relative + absolute
+	      scrollTop: relative + absolute - 40
 	    }, 500);
 	  });
   </script>
