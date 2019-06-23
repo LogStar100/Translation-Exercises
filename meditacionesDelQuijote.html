@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Meditaciónes del Quijote de José Ortega y Gasset | 1914</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="height: 120%;">
+  	<div class="row">
+  		<div class="twelve columns" style="margin-bottom: -1.5rem">
+  			<strong style="font-size: 5rem">MEDITACIONES DEL QUIJOTE</strong>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="twelve columns">
+  			<em style="font-size: 2rem">de José Ortega y Gasset</em>
+  		</div>
+  	</div>
+  	<div class="row" style="margin-top: 1rem;">
+  		<div class="twelve columns">
+  			<p>José Ortega y Gasset was an early-20th century philosopher and essayist, best known for his book <em>The Rebellion of the Masses</em>. <em>Meditations on Quijote</em> represents the earliest of his published writings, and despite its rather specific name, this book serves more as a commentary on the purpose of literature and the history of its integration into the human experience.</p>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="container together" style="padding: 4rem 0; border-top: 1px solid #eee;">
+    <div class="row">
+      <div class="eight columns text">
+        <p>¿<a href="#fakeId">Con cuántos</a> árboles se hace una <a href="#fakeId">selva</a>? ¿Con cuántas casas una ciudad? Según cantaba el labriego de Poitiers, "<a href="#fakeId"><em>La hauteur</a> des maisons empêche de voir la ville</em>,"
+
+        y el adagio germánico afirma que los árboles no <a href="#fakeId">dejan ver</a> el bosque. Selva y ciudad son dos cosas <a href="#fakeId">esencialmente</a> profundas, y la profundidad está condenada de una manera fatal a convertirse en superficie si quiere <a href="#fakeId">manifestarse</a>. <br> <br>
+
+        Tengo yo ahora en torno mío <a href="#fakeId">hasta</a> dos docenas de robles graves y de fresnos gentiles. ¿Es esto un bosque? Ciertamente que no: éstos son los árboles que veo de un bosque. El bosque verdadero se compone de los árboles que no veo. El bosque es <a href="#fakeId">una</a> naturaleza invisible — por eso en todos los idiomas conserva su nombre un halo de misterio. <br> <br>
+
+        Yo puedo ahora levantarme y tomar uno de estos <a href="#fakeId">vagos</a> senderos por donde veo cruzar a los mirlos. Los árboles que antes veía serán <a href="#fakeId">sustituidos</a> por otros análogos. Se irá el bosque descomponiendo, desgranando en una serie de trozos sucesivamente visibles. Pero nunca lo hallaré allí <a href="#fakeId">donde me encuentre</a>. El bosque huye de los ojos.</p>
+      </div>
+      <div class="four columns comments" style="overflow-y:auto">
+        <p><strong>con cuántos</strong> Requires careful translation to prevent an overly stilted sentence. The essence here is more important than verbatim translation.</p>
+
+        <p><strong>selva</strong> Note the idiom later within this sentence &ndash; should you translate this literally?</p>
+
+        <p><strong>la hauteur</strong> <em>La altura de las casas te impide ver la ciudad.</em> &ndash; should you translate this?</p>
+
+        <p><strong>dejan ver</strong> Think of the appropriate English idiom here.</p>
+
+        <p><strong>esencialmente</strong> Don't translate as "essentially."</p>
+
+        <p><strong>manifestarse</strong> The verb <em>manifestar</em> is much more common in Spanish than most of its usual English translations.</p>
+
+        <p><strong>hasta</strong> Not "until."</p>
+
+        <p><strong>una</strong> The effect here is to make the invisible more tangible &ndash; direct translation won't work here.</p>
+
+        <p><strong>vagos</strong> In this context, <em>vago</em> takes on a lot of different meanings: lazy, vaguely defined, wandering. There are a couple of good English words here for this, and one of them is listed above.</p>
+
+        <p><strong>sustituidos</strong> <em>sustituir por</em> should usually be translated by "to replace by," not "to substitute for."</p>
+
+        <p><strong>donde me encuentre</strong> The subjunctive is crucial here.</p>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$(".comments").css("height", $(".text").height());
+		});
+
+		$('a').on('click', function () {
+	    var index = $(this).index('a');
+      console.log(index);
+	    var relative = $($(".comments p").eq(index)).offset().top;
+	    var absolute = $('.comments').scrollTop() - $(".together").offset().top;
+	    $('.comments').animate({
+	      scrollTop: relative + absolute
+	    }, 500);
+	  });
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
