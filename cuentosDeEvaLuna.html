@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Cuentos de Eva Luna de Isabel Allende | 1872</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="height: 120%;">
+  	<div class="row">
+  		<div class="twelve columns" style="margin-bottom: -1.5rem">
+  			<strong style="font-size: 5rem">CUENTOS DE EVA LUNA</strong>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="twelve columns">
+  			<em style="font-size: 2rem">de Isabel Allende</em>
+  		</div>
+  	</div>
+  	<div class="row" style="margin-top: 1rem;">
+  		<div class="twelve columns">
+  			<p>Isabel Allende is a Chilean writer whose works often explore the genre of magical realism. Although she was born in Chile, she spent much of her life abroad in Venezuela and Spain, and this serves as the preface to her book <em>The Stories of Eva Luna</em> from the perspective of her lover as an explanation for her retelling of the (fictional) stories within the book.</p>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="container together" style="padding: 4rem 1rem; border-top: 1px solid #eee;">
+    <div class="row">
+      <div class="eight columns text">
+        <p>
+          <a href="#fakeID">Te quitabas</a> la <a href="#fakeID">faja de la cintura</a>, te arrancabas las sandalias, tirabas a un rincón tu amplia falda, <a href="#fakeID">de algodón, me parece</a>, y te soltabas el nudo que te retenía el pelo en una cola. Tenías la piel <a href="#fakeID">erizada</a> y te reías. Estabamos tan próximos que no podíamos vernos, ambos absortos en ese rito urgente, envueltos en <a href="#fakeID">el calor y el olor</a> que hacíamos juntos. Me abría paso <a href="#fakeID">por tus caminos</a>, mis manos en tu cintura <a href="#fakeID">encabritada</a> y las <a href="#fakeID">tuyas</a> impacientes. Te deslizabas, me recorrías, me trepabas, me envolvías con tus piernas invencibles, me decías mil veces <a href="#fakeID">ven</a> con los labios sobre los míos. En el instante final teníamos un atisbo de completa soledad, cada uno perdido en su quemante abismo, pero pronto resucitábamos desde el otro lado del fuego para descubrirnos abrazados en el <a href="#fakeID">desorden</a> de los almohadones, bajo el mosquitero blanco. Yo te apartaba el cabello para mirarte a los ojos. A veces te sentabas a mi lado, con las <a href="#fakeID">piernas recogidas</a> y tu chal de seda sobre un hombro, en el silencio de la noche que apenas comenzaba. Así te recuerdo, <a href="#fakeID">en calma</a>.
+        </p>
+      </div>
+      <div class="four columns comments" style="overflow-y:auto">
+        <p><strong>te quitabas</strong> Note the imperfect here: a bit of affection is conveyed here that needs to appear in the translation.</p>
+
+        <p><strong>faja de la cintura</strong> Is this referring to a sash around her waist or a waist girdle? How do you know?</p>
+
+        <p><strong>de algodón, me parece</strong> This is an interjection, even though it isn't separated as such &ndash; find a way to amplify this.</p>
+
+        <p><strong>erizada</strong> From <em>erizo</em>, meaning hedgehog. Related to <em>piel de gallina</em>.</p>
+
+        <p><strong>el calor y el olor</strong> This is much more sensual in the original Spanish &ndash; it is wrong to translate this as "in our heat and odor."</p>
+
+        <p><strong>por tus caminos</strong> Needs to be rendered idiomatically: think of suitable geographical imagery of the body or extend this one throughout the rest of the passage.</p>
+
+        <p><strong>encabritada</strong> More countryside imagery &ndash; derives from "like a goat."</p>
+
+        <p><strong>tuyas</strong> To what noun (within this sentence) does this refer?</p>
+
+        <p><strong>ven</strong> The same double entendre in English as in the Spanish.</p>
+
+        <p><strong>desorden</strong> An extended meaning might convey this stronger: riot, clutter, disarray, and disorder are all good options.</p>
+
+        <p><strong>piernas recogidas</strong> Imagine what this looks like &ndash; someone with their legs pulled up in some fashion &ndash; and find a suitable expression in English.</p>
+
+        <p><strong>en calma</strong> This is the clincher of this paragraph: "camly" doesn't convey this strongly enough.</p>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$(".comments").css("height", $(".text").height());
+		});
+
+		$('a').on('click', function () {
+	    var index = $(this).index('a');
+	    var relative = $($(".comments p").eq(index)).offset().top;
+	    var absolute = $('.comments').scrollTop() - $(".together").offset().top;
+	    $('.comments').animate({
+	      scrollTop: relative + absolute - 40
+	    }, 500);
+	  });
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
